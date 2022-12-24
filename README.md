@@ -21,3 +21,7 @@ Current Limitations / Planned Features:
   Whitelists
   Other complex banlists (Trinity Format etc)
   Further error handling / simplification
+
+If you have issues or questions you can contact the developers on discord at:
+  @Jinxsei#1535
+  @Evaniee#5839
