@@ -7,6 +7,7 @@ To use the program:
  - Run the .exe from anywhere on your system
  - Select your EDOPRO install (Default: "C:\ProjectIgnis")  
  - Select your banlist from the drop-down menu  
+ - Wait for the application to update (Sorry it might take a little while)
   
 Notes:  
 ------
@@ -23,6 +24,7 @@ Current Limitations / Planned Features:
 ---------------------------------------
  - Improved UI
  - More supported operating systems
+ - Optimization
  - OCG Cardpool  
  - Alternative Cardpools  
  - Whitelists  
