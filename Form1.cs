@@ -152,5 +152,15 @@ namespace EdoProValidator
             }
             catch(Exception ex) { }
         }
+
+        private void tsmi_alphabet_Click(object sender, EventArgs e)
+        {
+            dgv_decks.Columns[2].Visible = true;
+        }
+
+        private void tsmi_none_Click(object sender, EventArgs e)
+        {
+            dgv_decks.Columns[2].Visible = false;
+        }
     }
 }

@@ -36,6 +36,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsb_validate = new System.Windows.Forms.ToolStripButton();
             this.dgv_decks = new System.Windows.Forms.DataGridView();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsddb_restrictions = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tsmi_none = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_alphabet = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.dgv_tbc_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_cbc_valid = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_tbc_alphabet = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +55,9 @@
             this.toolStripSeparator2,
             this.tsddb_banlist,
             this.toolStripSeparator1,
-            this.tsb_validate});
+            this.tsb_validate,
+            this.toolStripSeparator3,
+            this.tsddb_restrictions});
             this.ts_main.Location = new System.Drawing.Point(0, 0);
             this.ts_main.Name = "ts_main";
             this.ts_main.Size = new System.Drawing.Size(500, 25);
@@ -113,6 +120,43 @@
             this.dgv_decks.TabIndex = 1;
             this.dgv_decks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_decks_CellContentClick);
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tsddb_restrictions
+            // 
+            this.tsddb_restrictions.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsddb_restrictions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_none,
+            this.toolStripSeparator4,
+            this.tsmi_alphabet});
+            this.tsddb_restrictions.Image = ((System.Drawing.Image)(resources.GetObject("tsddb_restrictions.Image")));
+            this.tsddb_restrictions.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsddb_restrictions.Name = "tsddb_restrictions";
+            this.tsddb_restrictions.Size = new System.Drawing.Size(81, 22);
+            this.tsddb_restrictions.Text = "Restrictions";
+            // 
+            // tsmi_none
+            // 
+            this.tsmi_none.Name = "tsmi_none";
+            this.tsmi_none.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_none.Text = "None";
+            this.tsmi_none.Click += new System.EventHandler(this.tsmi_none_Click);
+            // 
+            // tsmi_alphabet
+            // 
+            this.tsmi_alphabet.Name = "tsmi_alphabet";
+            this.tsmi_alphabet.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_alphabet.Text = "Alphabet";
+            this.tsmi_alphabet.Click += new System.EventHandler(this.tsmi_alphabet_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            // 
             // dgv_tbc_name
             // 
             this.dgv_tbc_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -135,7 +179,8 @@
             this.dgv_tbc_alphabet.HeaderText = "Alphabet Duplicates";
             this.dgv_tbc_alphabet.Name = "dgv_tbc_alphabet";
             this.dgv_tbc_alphabet.ReadOnly = true;
-            this.dgv_tbc_alphabet.Width = 126;
+            this.dgv_tbc_alphabet.Visible = false;
+            this.dgv_tbc_alphabet.Width = 138;
             // 
             // frm_validator
             // 
@@ -159,13 +204,18 @@
         private ToolStrip ts_main;
         private ToolStripDropDownButton tsddb_banlist;
         private DataGridView dgv_decks;
-        private DataGridViewTextBoxColumn dgv_tbc_name;
-        private DataGridViewCheckBoxColumn dgv_cbc_valid;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripButton tsb_source;
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripButton tsb_validate;
         private DataGridViewCheckBoxColumn dgv_cbc_alphabet;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripDropDownButton tsddb_restrictions;
+        private ToolStripMenuItem tsmi_none;
+        private ToolStripSeparator toolStripSeparator4;
+        private ToolStripMenuItem tsmi_alphabet;
+        private DataGridViewTextBoxColumn dgv_tbc_name;
+        private DataGridViewCheckBoxColumn dgv_cbc_valid;
         private DataGridViewTextBoxColumn dgv_tbc_alphabet;
     }
 }
