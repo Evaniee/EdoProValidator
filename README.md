@@ -4,6 +4,7 @@ This application can validate the decks in your EDOPRO install against banlists.
   
 To use the program:  
 -------------------
+ - Run the .exe from anywhere on your system
  - Select your EDOPRO install (Default: "C:\ProjectIgnis")  
  - Select your banlist from the drop-down menu  
   
@@ -20,6 +21,8 @@ Current Features:
   
 Current Limitations / Planned Features:  
 ---------------------------------------
+ - Improved UI
+ - More supported operating systems
  - OCG Cardpool  
  - Alternative Cardpools  
  - Whitelists  
